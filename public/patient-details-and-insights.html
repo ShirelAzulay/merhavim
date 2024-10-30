@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פרטי מטופל ותובנות</title>
+  <style>
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #fff8f3;
+          margin: 0;
+          padding: 0;
+      }
+      .container {
+          padding: 40px;
+          max-width: 800px;
+          margin: 0 auto;
+      }
+      h1 {
+          color: #2a547e;
+          text-align: center;
+      }
+      .header-bar {
+          background-color: #8fcbd0;
+          padding: 15px;
+          text-align: right;
+          font-weight: bold;
+          color: white;
+          border-radius: 8px;
+      }
+      .section {
+          margin-top: 20px;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .file-upload {
+          border: 2px dashed #2a547e;
+          padding: 20px;
+          text-align: center;
+          background-color: #f3f7f9;
+          border-radius: 10px;
+      }
+      .file-upload p {
+          color: #2a547e;
+      }
+      button {
+          background-color: #f77d8c;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+      }
+      .file {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px;
+          margin: 10px 0;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .file-actions {
+          display: flex;
+          gap: 10px;
+      }
+      .file-actions button {
+          padding: 5px 10px;
+          border-radius: 5px;
+      }
+      .delete {
+          background-color: red;
+          color: white;
+      }
+      .browse {
+          background-color: #2196f3;
+          color: white;
+      }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header-bar">ת.ז מטופל: <input type="text" placeholder="הכנס ת.ז מטופל" /></div>
+  <h1>פרטי מטופל ותובנות</h1>
+  <div class="section">
+    <h2>אזור אישי</h2>
+    <p>אזור אישי: משה כהן</p>
+    <div class="file-upload">
+      <p>ניתן לגרור את הקובץ לכאן</p>
+      <button>העלה מסמך</button>
+    </div>
+  </div>
+  <div class="section">
+    <h2>קבצי היסטוריית מסמכים</h2>
+    <div class="file">
+      <span>סיכום ביקור 12.4.24</span>
+      <div class="file-actions">
+        <button class="delete">X</button>
+        <button class="browse">Browse</button>
+      </div>
+    </div>
+    <div class="file">
+      <span>סיכום ביקור 15.5.24</span>
+      <div class="file-actions">
+        <button class="delete">X</button>
+        <button class="browse">Browse</button>
+      </div>
+    </div>
+  </div>
+  <button>הצג מסמכים נוספים</button>
+</div>
+</body>
+</html>
